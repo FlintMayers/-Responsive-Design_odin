@@ -139,6 +139,7 @@ footer .footer-quote {
   width: 100%;
   height: 281.5px;
   background-color: teal;
+  margin-top: 6px;
 }
 
 /*End Footer Quote Styling*/
@@ -174,6 +175,33 @@ footer .footer-legal {
 /*Start Media Queries styling*/
 
 @media screen and (max-width: 1010px) {
+  section.cover {
+    width: 100%;
+    height: 338.4px;
+  }
+  section .cover-main {
+    width: 67.1%;
+    height: 338.4px;
+  }
+
+  section .cover-story {
+    width: 32.9%;
+    height: 165.2px;
+  }
+
+  section.latest {
+    height: 805px;
+  }
+
+  section.latest ul {
+    height: 736px;
+  }
+
+  section.latest ul li {
+    width: 32%;
+    height: 239px;
+  }
+
   div.col-lg-4 {
     width: 33.3%;
   }
@@ -181,8 +209,108 @@ footer .footer-legal {
   #hidden-lg-4 {
     display: none;
   }
+
+  div.col-lg-3, div.one-third {
+    width: 50%;
+  }
+
+  div.clearfix-medium {
+    clear: both;
+  }
+
+  div.deals-prefooter {
+    height: 942.3px;
+  }
+
+  div.deals-prefooter ul {
+    height: 942.3px;
+  }
+
+  div.deals-prefooter ul {
+    height: 897.3px;
+  }
+
+  div.deals-prefooter ul li {
+    width: 32.9%;
+    height: 305px;
+  }
+
 }
 
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 755px) {
+  section.cover {
+    width: 100%;
+    height: 516.5px;
+  }
+  section .cover-main, section .cover-story {
+    width: 100%;
+    height: 169.5px;
+  }
 
+  section.latest {
+    height: 774px;
+  }
+
+  section.latest ul {
+    height: 704px;
+  }
+
+  section.latest ul li {
+    width: 100%;
+    height: 88px;
+  }
+
+  div.col-lg-4 {
+    width: 100%;
+  }
+
+  div.col-lg-3, div.one-third {
+    width: 100%;
+    height: 850.55px;
+  }
+
+  div.deals-prefooter {
+    height: 752px;
+  }
+
+  div.deals-prefooter ul {
+    height: 704px;
+  }
+
+  div.deals-prefooter ul li {
+    width: 100%;
+    height: 88px;
+  }
+
+  footer .footer-trends {
+    height: 402px;
+  }
+
+  footer .footer-trends .wrapper {
+    height: 332px;
+  }
+
+  .footer-trends .topics {
+    width: 50%;
+    height: 152px;
+  }
+}
+
+@media screen and (max-width: 467px ) {
+  
+  nav {
+    display: none;
+  }
+
+  footer .footer-trends {
+    height: 486px;
+  }
+
+  footer .footer-trends .wrapper {
+    height: 416px;
+  }
+
+  .footer-trends .topics {
+    width: 100%;
+  }
 }
