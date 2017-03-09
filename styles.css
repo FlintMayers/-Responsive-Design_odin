@@ -14,48 +14,207 @@
   max-width: 1152px;
 }
 
+/*Start navbar and ribbon*/
 nav {
   background-color: black;
   height: 32px;
   width: 100%;
 }
 
+nav ul {
+  max-height: 32px;
+  line-height: 32px;
+  font-size: 13px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgba(255,255,255,.6);
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+nav ul div.left-float {
+  float: left;
+}
+
+nav ul div.left-float li {
+  margin-left: 12px;
+}
+
+nav ul div.right-float {
+  float: right;
+}
+
+nav ul div.right-float li {
+  margin-right: 12px;
+}
+
 .ribbon {
-  background-color: brown;
+  background-color: white;
   width: 100%;
   height: 48px;
 }
 
+.ribbon .countdown {
+  margin: 0 auto;
+  width: 50%;
+  display: inline-block;
+}
+
+.ribbon .social {
+  display: inline-block;
+  float: right;
+}
+
+.ribbon .social li {
+  display: inline-block;
+}
+
+/*.ribbon button {
+  float: right;
+}*/
+
+/*End Navbar and Ribbon*/
+
+/*Start three main covers*/
+
 section.cover {
-  background-color: blue;
+  background-color: rgba(0,0,0,.1);
+  background-size: 100% 100%;
   width: 100%;
-  height: 414px;
+  height: 560px;
 }
 
 section .cover-main {
-  background: pink;
+  /*background: pink;*/
   width: 60.9%;
-  height: 414.4px;
+  /*height: 414.4px;*/
+  height: 100%;
   float: left;
+  padding: 4px;
 }
 
+section article.cover-main div.cover-trigger {
+  background-image: url('img/uberbeacon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+section article.cover-main div.cover-trigger header {
+  position: absolute;
+  bottom: 0;
+  padding: 14px 12px;
+}
+
+section article.cover-main div.cover-trigger #date {
+  margin-right: 24px;
+  margin-top: 16px;
+  float: right;
+  color: white;
+}
+
+
+section article.cover-main div.cover-trigger header a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto';
+}
+
+section article.cover-main div.cover-trigger header #big-text {
+  font-size: 56px;
+}
+
+section article.cover-main div.cover-trigger header ul li {
+  display: inline-block;
+  color: #555;
+}
+
+section article.cover-main div.cover-trigger header ul li a {
+  color: #555;
+}
+
+
 section .cover-story {
-  background: green;
   width: 39.1%;
-  height: 207px;
+  /*height: 207px;*/
+  height: 50%;
   float: left;
+  padding: 4px;
+}
+
+section article.cover-story div.small-trigger {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+section article.cover-story div.small-trigger header {
+  position: absolute;
+  bottom: 0;
+  padding: 14px 12px;
+}
+
+div.small-trigger header a {
+  text-decoration: none
+  color: white;
+}
+
+section article.cover-story div.small-trigger header ul li {
+  display: inline-block;
+}
+
+section article.cover-story div#trigger1 {
+  background-image: url('img/sidetrigger1.jpg');
+}
+
+section article.cover-story div#trigger2 {
+  background-image: url('img/trigger2.png');
+}
+
+section h5 {
+  color: white;
+}
+
+
+
+/*End three main covers*/
+
+/*Start main wrapper*/
+/*Start latest news section*/
+
+h2 a {
+  color: #F42;
+  text-decoration: none;
+}
+
+h2 a:hover {
+  color: black;
 }
 
  section.latest {
    width: 100%;
    height: 568.8px;
    background-color: yellow;
+   margin-top: 24px;
  }
 
  section.latest h2 {
    width: 100%;
    height: 30.8px;
    background-color: gray;
+   margin-bottom: 24px;
  }
 
  section.latest ul {
@@ -72,6 +231,9 @@ section.latest ul li {
   background-color: red;
 }
 
+/*End latest news section*/
+
+/*Start Latest deals section*/
  section.long-investment-deals {
    width: 100%;
    height: 350px;
@@ -82,6 +244,7 @@ section.latest ul li {
    width: 100%;
    height: 32px;
    background-color: red;
+   margin-bottom: 24px;
  }
 
  div.col-lg-4 {
@@ -92,6 +255,9 @@ section.latest ul li {
    border: 1px solid red;
  }
 
+ /*End Latest deals section*/
+
+/*Start 9 big columns*/
  div.col-lg-3 {
    width: 33.3%;
    height: 705px;
@@ -105,7 +271,9 @@ section.latest ul li {
    background-color: blue;
    float: left;
  }
+ /*End 9 big columns*/
 
+/*Start latest deals prefooter*/
  div.deals-prefooter {
    width: 100%;
    height: 661px;
@@ -131,9 +299,10 @@ div.deals-prefooter ul li {
   height: 318px;
   background-color: red;
 }
+/*/End Latest Deals Prefooter*/
 
+ /*End main wrapper*/
 
- /*End main content*/
  /*Start Footer*/
 footer .footer-quote {
   width: 100%;
@@ -170,7 +339,7 @@ footer .footer-legal {
   height: 97.5px;
   background-color: red;
 }
-/*End of Styling*/
+/*End Footer Styling*/
 
 /*Start Media Queries styling*/
 

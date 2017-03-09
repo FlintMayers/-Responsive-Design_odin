@@ -3,28 +3,32 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <title>Responsive Design</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
       <section class="nav-ribbon">
         <nav>
-          <!-- <ul class="nav-left">
-            <li><a href="#">News</a></li>
-            <li><a href="#">Conference</a></li>
-            <li><a href="#">Index</a></li>
-            <li><a href="#">TQ</a></li>
-            <li><a href="#">Deals</a></li>
-            <li><a href="#">Answers</a></li>
-            <li><a href="#">Tech5</a></li>
+          <ul>
+            <div class="left-float">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Conference</a></li>
+              <li><a href="#">Index</a></li>
+              <li><a href="#">TQ</a></li>
+              <li><a href="#">Deals</a></li>
+              <li><a href="#">Answers</a></li>
+              <li><a href="#">Tech5</a></li>
+            </div>
+            <div class="right-float">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Contact</a></li>
+            </div>
           </ul>
-          <ul class="nav-right">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Advertise</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul> -->
         </nav>
         <!-- End Nav -->
         <div id="logo">
@@ -32,7 +36,22 @@
         </div>
 
         <div class="ribbon">
-
+          <!-- <div class="collapse"> -->
+            <a href="#">CATEGORIES</a>
+          <!-- </div> -->
+          <div class="countdown">
+            <span>02:23:41:08</span>
+            <span>UNTIL PRICES RISE FOR</span>
+            <img width="172px" height="15px" src="https://cdn3.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/misc/conf-ams17-logo-red.svg" alt="">
+            <button type="button">LEARN MORE</button>
+          </div>
+          <ul class="social">
+            <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+            <li><i class="fa fa-ellipsis-h" aria-hidden="true"></i></li>
+          </ul>
+          <button type="button" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
         </div>
         <div class="clearfix"></div>
         <div id="below-ribbon">
@@ -45,13 +64,46 @@
 
       <section class="cover">
         <article class="cover-main">
-          cover main
+          <div class="cover-trigger">
+            <div id="date">
+              Thursday - March 9, 2017
+            </div>
+            <header>
+              <h5>APPS</h5>
+              <a id="big-text"  href="#">Uber backtracks on shady Greyball tool allegedly used to avoid authorities</a>
+              <ul>
+                <li><a href="#">by Rachel Kaser</a></li>
+                <li><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 1 hour ago</a></li>
+                <li><i class="fa fa-share-alt" aria-hidden="true"></i> 153</li>
+              </ul>
+            </header>
+          </div>
         </article>
         <article class="cover-story">
-          cover story
+          <div id="trigger1" class="small-trigger">
+            <header>
+              <h5>APPS</h5>
+              <ahref="#">Google’s security AI is now so smart it doesn’t need to ask if you’re “not a robot”</a>
+              <ul>
+                <li><a href="#">by Nappier Lopez</a></li>
+                <li><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 1 hour ago</a></li>
+                <li><i class="fa fa-share-alt" aria-hidden="true"></i> 190</li>
+              </ul>
+            </header>
+          </div>
         </article>
         <article class="cover-story">
-          cover story
+          <div id="trigger2" class="small-trigger">
+            <header>
+              <h5>APPS</h5>
+              <a href="#">Shout for Chrome and iOS is like the lovechild of Goodreads and Pocket</a>
+              <ul>
+                <li><a href="#">by Matthew Hughes</a></li>
+                <li><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 2 hour ago</a></li>
+                <li><i class="fa fa-share-alt" aria-hidden="true"></i> 147</li>
+              </ul>
+            </header>
+          </div>
         </article>
 
       </section>
@@ -59,7 +111,7 @@
 
       <div class="wrapper">
       <section class="latest">
-        <h2>h2</h2>
+        <h2><a href="#">Latest News</a></h2>
         <ul>
           <li>li</li>
           <li>li</li>
@@ -74,7 +126,7 @@
       <div class="clearfix"></div>
       <section class="long-investment-deals">
         <header class="deals-header">
-          deals header
+          <h2><a href="#">Latest funding rounds on Index.co </a></h2>
         </header>
         <div class="col-lg-4">
           deal
