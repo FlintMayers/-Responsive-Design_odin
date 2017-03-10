@@ -12,6 +12,7 @@
 .wrapper {
   margin: 0 auto;
   max-width: 1152px;
+  padding: 0 20px;
 }
 
 /*Start navbar and ribbon*/
@@ -60,26 +61,94 @@ nav ul div.right-float li {
   background-color: white;
   width: 100%;
   height: 48px;
+  text-align: center;
+
+}
+
+.ribbon a {
+  float: left;
+  text-decoration: none;
+  color: #aaa;
+  height: 100%;
+  padding: 20px 10px;
+  font-size: 12px;
+}
+
+.ribbon a:hover {
+ color: black;
 }
 
 .ribbon .countdown {
-  margin: 0 auto;
-  width: 50%;
   display: inline-block;
+  text-align: center;
+  padding: 9px 0;
 }
+
+.ribbon .countdown div {
+  display: inline-block;
+  color: #F42;
+}
+
+.ribbon .countdown span {
+  font-size: 12px;
+  color: #555;
+}
+
+.ribbon .countdown button {
+  font-weight: 700;
+  font-size: 11px;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #0CC;
+  padding: 0 12px;
+  line-height: 28px;
+}
+.ribbon .countdown button:hover {
+  background-color: #90C;
+}
+
 
 .ribbon .social {
   display: inline-block;
   float: right;
+  padding: 14px 5px;
 }
 
 .ribbon .social li {
   display: inline-block;
+  padding-left: 11px;
 }
 
-/*.ribbon button {
-  float: right;
-}*/
+.ribbon .social li i {
+  color: #555;
+}
+
+.ribbon .social li button {
+  background-color: white;
+}
+
+#below-ribbon {
+  display: none;
+  width: 100%;
+  height: 24px;
+  background-color: black;
+  text-align: center;
+}
+
+#below-ribbon a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+#below-ribbon a span {
+  color: #0CC;
+  font-weight: 700;
+}
+
+#below-ribbon a span:hover {
+  color: #90C;
+}
 
 /*End Navbar and Ribbon*/
 
@@ -143,7 +212,6 @@ section article.cover-main div.cover-trigger header ul li a {
   color: #555;
 }
 
-
 section .cover-story {
   width: 39.1%;
   /*height: 207px;*/
@@ -166,11 +234,6 @@ section article.cover-story div.small-trigger header {
   padding: 14px 12px;
 }
 
-div.small-trigger header a {
-  text-decoration: none
-  color: white;
-}
-
 section article.cover-story div.small-trigger header ul li {
   display: inline-block;
 }
@@ -183,9 +246,11 @@ section article.cover-story div#trigger2 {
   background-image: url('img/trigger2.png');
 }
 
-section h5 {
+/*section.cover h5, a {
   color: white;
-}
+  text-decoration: none;
+}*/
+
 
 
 
@@ -206,21 +271,21 @@ h2 a:hover {
  section.latest {
    width: 100%;
    height: 568.8px;
-   background-color: yellow;
+   /*background-color: yellow;*/
    margin-top: 24px;
  }
 
  section.latest h2 {
    width: 100%;
    height: 30.8px;
-   background-color: gray;
+   /*background-color: gray;*/
    margin-bottom: 24px;
  }
 
  section.latest ul {
    width: 100%;
    height: 502px;
-   background-color: purple;
+   /*background-color: purple;*/
    /*display: inline;*/
 }
 
@@ -228,7 +293,32 @@ section.latest ul li {
   display: inline-block;
   width: 24.5%;
   height: 251px;
-  background-color: red;
+  padding: 12px;
+}
+
+section.latest ul li .byline {
+  text-decoration: none;
+  color: #555;
+  font-size: 12px;
+}
+
+section.latest ul li h4 a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+section.latest ul li h4 a:hover {
+  color: #F42;
+  text-decoration: underline;
+}
+
+section.latest ul li .latestImage {
+  width: 100%;
+  height: 123px;
+  background-image: url('img/latest1.jpg');
+  background-size: cover;
+  display: inline-block;
 }
 
 /*End latest news section*/
@@ -237,23 +327,67 @@ section.latest ul li {
  section.long-investment-deals {
    width: 100%;
    height: 350px;
-   background-color: gray;
+   margin-bottom: 45px;
+   /*background-color: gray;*/
  }
 
  header.deals-header {
    width: 100%;
    height: 32px;
-   background-color: red;
+   /*background-color: red;*/
    margin-bottom: 24px;
+ }
+
+ header.deals-header h2 {
+   display: inline-block;
+   float: left;
+ }
+
+ header.deals-header a {
+   display: inline-block;
+   float: right;
+   text-decoration: none;
+   color: #F42;
+ }
+
+ header.deals-header a:hover {
+   color: black;
+ }
+
+ .large9 {
+   margin-bottom: 40px;
  }
 
  div.col-lg-4 {
    width: 25%;
    height: 286px;
    float: left;
-   background-color: pink;
    border: 1px solid red;
+   padding: 12px;
  }
+
+ div.col-lg-4 img {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   margin: 11px;
+ }
+
+ div.col-lg-4 > h4 {
+   background-color: #F42;
+   height: 39px;
+   width: 100%;
+   padding: 10.67px 16px 10.67px 84px;
+   font-size: 15px;
+ }
+
+ div.col-lg-4 .story-card {
+   background-color: rgba(255,68,34,.08);
+   height: 75.3px;
+   padding: 10.67px 16px 10.67px 84px;
+   font-size: 15px;
+ }
+
 
  /*End Latest deals section*/
 
@@ -277,19 +411,20 @@ section.latest ul li {
  div.deals-prefooter {
    width: 100%;
    height: 661px;
-   background-color: violet;
+   /*background-color: violet;*/
  }
 
  div.deals-prefooter h2 {
    width: 100%;
    height: 30.8px;
-   background-color: gray;
+   margin-bottom: 24px;
+   /*background-color: gray;*/
  }
 
  div.deals-prefooter {
    width: 100%;
    height: 661px;
-   background-color: purple;
+   /*background-color: purple;*/
    /*display: inline;*/
 }
 
@@ -351,11 +486,6 @@ footer .footer-legal {
     float: left;
   }
 
-  #below-ribbon {
-    width: 100%;
-    height: 24px;
-    background-color: purple;
-  }
 
   nav {
     height: 32px;
@@ -369,6 +499,14 @@ footer .footer-legal {
     float: right;
   }
 
+  .ribbon .countdown span, #cd-img, .ribbon .countdown button {
+    display: none;
+  }
+
+  #below-ribbon {
+    display: block;
+  }
+
   section.cover {
     width: 100%;
     height: 338.4px;
@@ -376,6 +514,10 @@ footer .footer-legal {
   section .cover-main {
     width: 67.1%;
     height: 338.4px;
+  }
+
+  section article.cover-main div.cover-trigger header #big-text {
+    font-size: 40px;
   }
 
   section .cover-story {
@@ -394,6 +536,24 @@ footer .footer-legal {
   section.latest ul li {
     width: 32%;
     height: 239px;
+  }
+
+  header.deals-header {
+    height: 60px;
+  }
+
+  header.deals-header h2  {
+    width: 100%;
+  }
+
+  header.deals-header h2 a {
+    float: left;
+    width: 100%;
+  }
+
+  header.deals-header > a {
+    float: left;
+    margin-top: 10px;
   }
 
   div.col-lg-4 {
@@ -443,11 +603,15 @@ footer .footer-legal {
 
   section.cover {
     width: 100%;
-    height: 516.5px;
+    height: 750px;
   }
   section .cover-main, section .cover-story {
     width: 100%;
-    height: 169.5px;
+    height: 255px;
+  }
+
+  section article.cover-main div.cover-trigger header #big-text {
+    font-size: 20px;
   }
 
   section.latest {
@@ -463,8 +627,25 @@ footer .footer-legal {
     height: 88px;
   }
 
+  section.latest ul li .latestImage {
+    width: 72px;
+    height: 72px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  header.deals-header {
+      height: 122px;
+    }
+
+  header.deals-header > a {
+    width: 100%;
+    float: left;
+  }
+
   div.col-lg-4 {
     width: 100%;
+    height: 242px;
   }
 
   div.col-lg-3, div.one-third {
