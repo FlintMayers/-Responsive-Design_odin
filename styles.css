@@ -161,21 +161,34 @@ section.cover {
   height: 560px;
 }
 
+section.cover h5 {
+  color: white;
+}
+
 section .cover-main {
   /*background: pink;*/
   width: 60.9%;
   /*height: 414.4px;*/
   height: 100%;
   float: left;
-  padding: 4px;
+  border: 4px solid whitesmoke;
 }
 
-section article.cover-main div.cover-trigger {
+section article#cover-trigger-bg {
   background-image: url('img/uberbeacon.png');
+  background-size: 100% 100%;
+}
+
+
+section article.cover-main div.cover-trigger {
+  /*background-image: url('img/uberbeacon.png');*/
+  background-image: url('img/cover-gradient.png');
+  background-image: url('img/img-grad.png');
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 100%;
+  z-index: 10;
   position: relative;
 }
 
@@ -217,7 +230,8 @@ section .cover-story {
   /*height: 207px;*/
   height: 50%;
   float: left;
-  padding: 4px;
+  /*padding: 4px;*/
+  border: 4px solid whitesmoke;
 }
 
 section article.cover-story div.small-trigger {
@@ -255,23 +269,23 @@ section article.cover-story div.small-trigger header ul li a {
 }
 
 section article.cover-story div#trigger1 {
-  background-image: url('img/sidetrigger1.jpg');
   background-image: url('img/img-grad.png');
   background-size: 100% 100%;
-  /*background: url('img/img-grad.png') no-repeat rgba(0,0,0,.25); */
-  /*position: absolute;;*/
 }
 
 section article.cover-story div#trigger2 {
-  background-image: url('img/trigger2.png');
-  background-size: 100% 100%;
-  position: relative;
-  /*background-color: rgba(0,0,0,.25);*/
-}
-section article.cover-story div#trigger2:after {
   background: url('img/img-grad.png');
-  opacity: 0.5;
-  position: absolute;
+  background-size: 100% 100%;
+  /*position: relative;*/
+}
+
+section article#cover-story-bg1 {
+  background-image: url('img/sidetrigger1.jpg');
+  z-index: 10;
+}
+
+section article#cover-story-bg2 {
+  background-image: url('img/trigger2.png');
   z-index: 10;
 }
 
@@ -481,7 +495,8 @@ div.col-lg-4 div.col-lg-mini {
  div.col-lg-3 {
    width: 33.3%;
    height: 705px;
-   background-color: green;
+   border: 1px solid green;
+   /*background-color: green;*/
    float: left;
    padding: 12px;
    margin-bottom: 24px;
@@ -493,10 +508,14 @@ div.col-lg-4 div.col-lg-mini {
 
 div.col-lg-3  div.lg-col-img{
   width: 100%;
-  height: 49%;
+  height: 41%;
   background-image: url('img/img-grad.png');
   background-size: 100% 100%;
   position: relative;
+}
+
+div.lg-col-img div a {
+  font-size: 12px;
 }
 
 div.col-lg-3  div.lg-col-img header {
@@ -535,6 +554,35 @@ div.col-lg-3  div.lg-col-img header div a {
    height: 666px;
    background-color: blue;
    float: left;
+ }
+
+ .col-lg-mini {
+   padding: 10px 0 0 10px;
+   height: 96px;
+   background-color: rgba(255,68,34,.2);
+ }
+
+ .col-lg-mini h5,
+ .col-lg-mini a {
+   text-decoration: none;
+   color: #F42;
+   width: 70%;
+   display: inline-block;
+   float: left;
+ }
+
+ .col-lg-3 ul {
+   padding-left: 15px;
+ }
+
+ .col-lg-3 ul li {
+   padding: 6px 0 6px 0;
+ }
+
+ .col-lg-3 img {
+   width: 96px;
+   height: 96px;
+   float: right;
  }
  /*End 9 big columns*/
 
