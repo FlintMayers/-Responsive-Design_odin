@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto';
+}
+
 .clearfix {
   clear: both;
 }
@@ -209,7 +213,6 @@ section article.cover-main div.cover-trigger #date {
 section article.cover-main div.cover-trigger header a {
   text-decoration: none;
   color: white;
-  font-family: 'Roboto';
 }
 
 section article.cover-main div.cover-trigger header #big-text {
@@ -251,7 +254,6 @@ section article.cover-story div.small-trigger header {
 section article.cover-story div.small-trigger header a {
   text-decoration: none;
   color: white;
-  font-family: 'Roboto';
 }
 
 section article.cover-story div.small-trigger header > a {
@@ -415,6 +417,7 @@ section.latest ul li .latimg8 {
    float: right;
    text-decoration: none;
    color: #F42;
+   margin-right: 23px;
  }
 
  header.deals-header a:hover {
@@ -488,14 +491,15 @@ div.col-lg-4 div.col-lg-mini {
 /*Start 9 big columns*/
  .large9 {
    margin-bottom: 40px;
-   height: 2115px;
+   /*height: 2115px;*/
    width: 100%;
  }
 
  div.col-lg-3 {
    width: 33.3%;
-   height: 705px;
-   border: 1px solid green;
+   /*height: auto;*/
+   /*height: 705px;*/
+   /*border: 1px solid green;*/
    /*background-color: green;*/
    float: left;
    padding: 12px;
@@ -508,10 +512,10 @@ div.col-lg-4 div.col-lg-mini {
 
 div.col-lg-3  div.lg-col-img{
   width: 100%;
-  height: 41%;
+  height: 300px;
   background-image: url('img/img-grad.png');
   background-size: 100% 100%;
-  position: relative;
+  /*position: relative;*/
 }
 
 div.lg-col-img div a {
@@ -519,9 +523,10 @@ div.lg-col-img div a {
 }
 
 div.col-lg-3  div.lg-col-img header {
-  position: absolute;
-  bottom: 10px;
+  /*position: absolute;*/
+  bottom: 0;
   padding-left: 14px;
+
 }
 
 div.col-lg-3  div.lg-col-img header {
@@ -532,7 +537,6 @@ div.col-lg-3  div.lg-col-img header > a,
 div.col-lg-3  div.lg-col-img header > h5 {
   text-decoration: none;
   color: white;
-  font-family: 'Roboto';
 }
 
 div.col-lg-3  div.lg-col-img header > a {
@@ -549,6 +553,12 @@ div.col-lg-3  div.lg-col-img header div a {
   text-decoration: none;
 }
 
+div.col-lg-3 ul {
+  list-style-type: none;
+}
+
+div.col-lg-3 ul li::before {content: "• "; color: #F42;};
+
  div.one-third {
    width: 33.3%;
    height: 666px;
@@ -560,6 +570,7 @@ div.col-lg-3  div.lg-col-img header div a {
    padding: 10px 0 0 10px;
    height: 96px;
    background-color: rgba(255,68,34,.2);
+
  }
 
  .col-lg-mini h5,
@@ -571,12 +582,10 @@ div.col-lg-3  div.lg-col-img header div a {
    float: left;
  }
 
- .col-lg-3 ul {
-   padding-left: 15px;
- }
-
  .col-lg-3 ul li {
    padding: 6px 0 6px 0;
+   color: #555;
+   font-size: 12px;
  }
 
  .col-lg-3 img {
@@ -658,6 +667,10 @@ footer .footer-legal {
 /*Start Media Queries styling*/
 
 @media screen and (max-width: 1010px) {
+
+  #clear-none {
+    clear: none;
+  }
   #logo {
     width: 11%;
     height: 80px;
@@ -748,7 +761,7 @@ footer .footer-legal {
 
   .large9 {
     margin-bottom: 40px;
-    height: 3525px;
+    /*height: 3525px;*/
     width: 100%;
   }
 
@@ -836,13 +849,13 @@ footer .footer-legal {
     height: 242px;
   }
 
-  .large9 {
+  /*.large9 {
     height: 7655px;
-  }
+  }*/
 
   div.col-lg-3, div.one-third {
     width: 100%;
-    height: 850.55px;
+    height: auto;
   }
 
   div.deals-prefooter {
