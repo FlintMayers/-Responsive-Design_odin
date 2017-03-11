@@ -24,6 +24,8 @@ nav {
   background-color: black;
   height: 32px;
   width: 100%;
+  position: fixed;
+  z-index: 50;
 }
 
 nav ul {
@@ -66,6 +68,8 @@ nav ul div.right-float li {
   width: 100%;
   height: 48px;
   text-align: center;
+  position: fixed;
+  z-index: 50;
 
 }
 
@@ -412,7 +416,7 @@ section.latest ul li .latimg8 {
    float: left;
  }
 
- header.deals-header a {
+ header.deals-header > a {
    display: inline-block;
    float: right;
    text-decoration: none;
@@ -598,69 +602,231 @@ div.col-lg-3 ul li::before {content: "• "; color: #F42;};
 /*Start latest deals prefooter*/
  div.deals-prefooter {
    width: 100%;
-   height: 661px;
+   /*height: 661px;*/
    /*background-color: violet;*/
  }
-
- div.deals-prefooter h2 {
-   width: 100%;
-   height: 30.8px;
-   margin-bottom: 24px;
-   /*background-color: gray;*/
- }
-
- div.deals-prefooter {
-   width: 100%;
-   height: 661px;
-   /*background-color: purple;*/
-   /*display: inline;*/
-}
 
 div.deals-prefooter ul li {
   display: inline-block;
   width: 24.5%;
-  height: 318px;
-  background-color: red;
+  /*height: 318px;*/
+  border: 1px solid red;
+  padding: 12px;
 }
+
+div.deals-prefooter ul li .prefooter1 {
+  background-image: url('img/prefooter1.jpg');
+}
+
+div.deals-prefooter ul li .prefooter2 {
+  background-image: url('img/prefooter2.jpg');
+}
+
+div.deals-prefooter ul li .prefooter3 {
+  background-image: url('img/prefooter3.jpg');
+}
+
+div.deals-prefooter ul li .prefooter4 {
+  background-image: url('img/prefooter4.jpg');
+}
+
+div.deals-prefooter ul li .prefooter5 {
+  background-image: url('img/prefooter5.jpg');
+}
+
+div.deals-prefooter ul li .prefooter6 {
+  background-image: url('img/prefooter6.jpg');
+}
+
+div.deals-prefooter ul li .prefooter7 {
+  background-image: url('img/prefooter7.jpg');
+}
+
+div.deals-prefooter ul li .prefooter8 {
+  background-image: url('img/prefooter8.jpg');
+}
+
+div.deals-prefooter ul li .latestImage {
+  width: 100%;
+  height: 201px;
+  background-size: cover;
+  display: inline-block;
+}
+
+
+
 /*/End Latest Deals Prefooter*/
 
  /*End main wrapper*/
 
  /*Start Footer*/
+footer .footer-quote .wrapper {
+  text-align: center;
+}
+
+footer .footer-quote {
+  padding: 40px 0;
+}
+
 footer .footer-quote {
   width: 100%;
-  height: 281.5px;
-  background-color: teal;
+  /*height: 281.5px;*/
+  background-color: whitesmoke;
   margin-top: 6px;
 }
 
-/*End Footer Quote Styling*/
+footer .footer-quote h5 {
+  color: #555;
+  text-transform: uppercase;
+  font-size: 14px;
+}
 
+footer .footer-quote p {
+  color: #F42;
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+footer .footer-quote a {
+  color: #AAA;
+  font-size: 14px;
+  border: 2px solid rgba(0,0,0,.1);
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 4px 8px;
+}
+
+footer .footer-quote a:hover {
+  color: black;
+  border: 2px solid rgba(0,0,0,.2);
+}
+
+
+/*End Footer Quote Styling*/
+/*Start Footer Trends Styling*/
 footer .footer-trends {
   width: 100%;
   height: 250px;
-  background-color: black;
+  background-color: #131313;
+  padding: 2.5em;
 }
 
 .footer-trends .topics {
   width: 33.3%;
-  height: 152px;
-  background-color: gray;
+  /*height: 152px;*/
+  /*border: 1px solid red;*/
   float: left;
+  margin-bottom: 2em;
+  background-color: #131313;
 }
+
+.footer-trends .topics h3 {
+  float: left;
+  color: grey;
+  margin-bottom: .9em;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.footer-trends .topics ul {
+  list-style-type: none;
+}
+
+.footer-trends .topics ul li {
+  display: block;
+  width: 100%;
+  float: left;
+  line-height: 1.5em;
+}
+
+.footer-trends .topics ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-trends .topics ul li span {
+  margin-left: 5px;
+  color: #555;
+  font-size: 14px;
+ }
 
 /*End Footer Trends Styling*/
 
+/*Start Footer Links Styling*/
+footer .footer-links .wrapper {
+  text-align: center;
+}
+
 footer .footer-links {
   width: 100%;
-  height: 160.5px;
-  background-color: brown;
+  /*height: 160.5px;*/
+  padding: 30px;
+  background-color: #131313;
 }
+
+footer .footer-links ul {
+  list-style-type: none;
+}
+
+footer .footer-links ul li {
+  display: inline;
+}
+
+footer .footer-links .social {
+  margin-bottom: 1.5em;
+}
+
+
+footer .footer-links .social li a {
+  border-radius: 50%;
+  background-color: #333;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  margin: 0 8px;
+
+}
+
+footer .footer-links .social li i {
+  margin-bottom: 1.5em;
+  color: white;
+  padding-top: 11px;
+}
+
+footer .footer-links .menu li {
+  margin: 0 6px;
+}
+
+
+footer .footer-links .menu li a {
+  text-decoration: none;
+  color: #AAA;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+
+
+/*End Footer Links Styling*/
 
 footer .footer-legal {
   width: 100%;
   height: 97.5px;
-  background-color: red;
+  background-color: black;
+  padding: 3em 0;
+  color: #AAA;
+  font-size: 13px;
+}
+
+footer .footer-legal b {
+  color: #F42;
+}
+
+
+footer .footer-legal .wrapper {
+  text-align: center;
 }
 /*End Footer Styling*/
 
@@ -774,20 +940,24 @@ footer .footer-legal {
   }
 
   div.deals-prefooter {
-    height: 942.3px;
+    /*height: 942.3px;*/
   }
 
   div.deals-prefooter ul {
-    height: 942.3px;
+    /*height: 942.3px;*/
   }
 
   div.deals-prefooter ul {
-    height: 897.3px;
+    /*height: 897.3px;*/
   }
 
   div.deals-prefooter ul li {
     width: 32.9%;
     height: 305px;
+  }
+
+  footer .footer-quote p {
+    font-size: 40px;
   }
 
 }
@@ -835,10 +1005,6 @@ footer .footer-legal {
     margin-right: 10px;
   }
 
-  header.deals-header {
-      height: 122px;
-    }
-
   header.deals-header > a {
     width: 100%;
     float: left;
@@ -858,31 +1024,28 @@ footer .footer-legal {
     height: auto;
   }
 
-  div.deals-prefooter {
-    height: 752px;
-  }
-
-  div.deals-prefooter ul {
-    height: 704px;
-  }
 
   div.deals-prefooter ul li {
     width: 100%;
-    height: 88px;
   }
 
   footer .footer-trends {
-    height: 402px;
+    height: 421px;
   }
 
-  footer .footer-trends .wrapper {
+  /*footer .footer-trends .wrapper {
     height: 332px;
-  }
+  }*/
 
   .footer-trends .topics {
     width: 50%;
-    height: 152px;
+    /*height: 152px;*/
   }
+
+  footer .footer-quote p {
+    font-size: 22px;
+  }
+
 }
 
 @media screen and (max-width: 467px ) {
@@ -900,12 +1063,12 @@ footer .footer-legal {
   }
 
   footer .footer-trends {
-    height: 486px;
+    height: 540px;
   }
 
-  footer .footer-trends .wrapper {
+  /*footer .footer-trends .wrapper {
     height: 416px;
-  }
+  }*/
 
   .footer-trends .topics {
     width: 100%;
